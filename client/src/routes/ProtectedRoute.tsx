@@ -1,12 +1,13 @@
-import {
-  Navigate
-} from "react-router-dom";
+import { Navigate } from "react-router-dom";
+import { ReactNode } from "react";
+
+interface Props {
+  children: ReactNode;
+}
 
 function ProtectedRoute({
   children,
-}: {
-  children: JSX.Element;
-}) {
+}: Props) {
 
   const token =
     localStorage.getItem("token");
@@ -16,7 +17,7 @@ function ProtectedRoute({
     return <Navigate to="/" />;
   }
 
-  return children;
+  return <>{children}</>;
 }
 
 export default ProtectedRoute;
