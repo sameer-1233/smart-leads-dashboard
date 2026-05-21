@@ -24,7 +24,7 @@ function Login() {
     try {
 
       const res = await axios.post(
-        https://smart-leads-dashboard-s2d3.onrender.com/api/api/auth/login",
+        "https://smart-leads-dashboard-s2d3.onrender.com/api/auth/login",
         {
           email,
           password,

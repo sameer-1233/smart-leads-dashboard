@@ -143,15 +143,15 @@ function Dashboard() {
       =========================
       */
 
-      const res = await axios.get(
-        https://smart-leads-dashboard-s2d3.onrender.com/api/api/leads?page=${currentPage}`,
-        {
-          headers: {
-            Authorization:
-              `Bearer ${token}`,
-          },
-        }
-      );
+   const res = await axios.get(
+  `https://smart-leads-dashboard-s2d3.onrender.com/api/leads?page=${currentPage}`,
+  {
+    headers: {
+      Authorization:
+        `Bearer ${token}`,
+    },
+  }
+);
 
       /*
       =========================
@@ -240,21 +240,21 @@ function Dashboard() {
       const token =
         localStorage.getItem("token");
 
-      await axios.post(
-        https://smart-leads-dashboard-s2d3.onrender.com/api/api/leads",
-        {
-          name,
-          email,
-          status,
-          source,
-        },
-        {
-          headers: {
-            Authorization:
-              `Bearer ${token}`,
-          },
-        }
-      );
+      const res = await axios.post(
+  "https://smart-leads-dashboard-s2d3.onrender.com/api/leads",
+  {
+    name,
+    email,
+    status,
+    source,
+  },
+  {
+    headers: {
+      Authorization:
+        `Bearer ${token}`,
+    },
+  }
+);
 
       toast.success(
         "Lead Created"
@@ -288,15 +288,15 @@ function Dashboard() {
       const token =
         localStorage.getItem("token");
 
-      await axios.delete(
-        https://smart-leads-dashboard-s2d3.onrender.com/api/api/leads/${id}`,
-        {
-          headers: {
-            Authorization:
-              `Bearer ${token}`,
-          },
-        }
-      );
+      const res = await axios.get(
+  `https://smart-leads-dashboard-s2d3.onrender.com/api/leads?page=${currentPage}`,
+  {
+    headers: {
+      Authorization:
+        `Bearer ${token}`,
+    },
+  }
+);
 
       toast.success(
         "Lead Deleted"
