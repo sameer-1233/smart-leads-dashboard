@@ -144,7 +144,7 @@ function Dashboard() {
       */
 
       const res = await axios.get(
-        `http://localhost:5000/api/leads?page=${currentPage}`,
+        https://smart-leads-dashboard-s2d3.onrender.com/api/api/leads?page=${currentPage}`,
         {
           headers: {
             Authorization:
@@ -241,7 +241,7 @@ function Dashboard() {
         localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/leads",
+        https://smart-leads-dashboard-s2d3.onrender.com/api/api/leads",
         {
           name,
           email,
@@ -289,7 +289,7 @@ function Dashboard() {
         localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/leads/${id}`,
+        https://smart-leads-dashboard-s2d3.onrender.com/api/api/leads/${id}`,
         {
           headers: {
             Authorization:
@@ -326,7 +326,7 @@ function Dashboard() {
         localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/leads/${editId}`,
+        `https://smart-leads-dashboard-s2d3.onrender.com/api/api/leads/${editId}`,
         {
           name: editName,
           email: editEmail,
