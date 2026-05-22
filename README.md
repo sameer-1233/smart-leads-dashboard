@@ -74,7 +74,7 @@ JWT_SECRET=your_jwt_secret
 ## Live Deployment
 
 Frontend:
-https://your-vercel-link.vercel.app
+https://smart-leads-dashboard-qq4gwd1hc-sameer-pathanias-projects.vercel.app/
 
 Backend:
 https://smart-leads-dashboard-s2d3.onrender.com
