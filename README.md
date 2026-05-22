@@ -94,3 +94,9 @@ POST /api/leads
 PUT /api/leads/:id
 
 DELETE /api/leads/:id
+
+## Docker Setup
+
+Run project using Docker:
+
+docker-compose up --build

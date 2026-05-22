@@ -326,7 +326,7 @@ function Dashboard() {
         localStorage.getItem("token");
 
       await axios.put(
-        `https://smart-leads-dashboard-s2d3.onrender.com/api/api/leads/${editId}`,
+        `https://smart-leads-dashboard-s2d3.onrender.com/api/leads/${editId}`,
         {
           name: editName,
           email: editEmail,
